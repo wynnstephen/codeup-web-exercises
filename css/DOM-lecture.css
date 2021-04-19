@@ -1,16 +1,20 @@
+body{
+    background-color: tan;
+}
+
 .A{
     border: red solid;
     background-color: blue;
-    text-decoration-color: darkgreen;
+    color: darkgreen;
 }
 .B{
     border: orange solid;
-    text-decoration-color: darkgreen;
+    color: darkgreen;
 }
 .C{
     border: yellow solid;
     background-color: blue;
-    text-decoration-color: darkgreen;
+    color: darkgreen;
 }
 .D{
     border: green solid;
@@ -18,7 +22,7 @@
 .E{
     border: blue solid;
     background-color: blue;
-    text-decoration-color: darkgreen;
+    color: darkgreen;
 }
 .F{
     border: indigo solid;
