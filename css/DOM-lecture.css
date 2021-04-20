@@ -1,0 +1,25 @@
+.A{
+    border: red solid;
+    background-color: blue;
+    text-decoration-color: darkgreen;
+}
+.B{
+    border: orange solid;
+    text-decoration-color: darkgreen;
+}
+.C{
+    border: yellow solid;
+    background-color: blue;
+    text-decoration-color: darkgreen;
+}
+.D{
+    border: green solid;
+}
+.E{
+    border: blue solid;
+    background-color: blue;
+    text-decoration-color: darkgreen;
+}
+.F{
+    border: indigo solid;
+}
