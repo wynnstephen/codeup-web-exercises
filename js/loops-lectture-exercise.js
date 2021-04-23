@@ -30,14 +30,25 @@
 //  is now full" to the console.
 // // HINT: think of a countdown, remember if statements can be used inside of your statements
 
-var numOfCars = 2;
+// var numOfCars = 2;
+//
+// do {
+//     var parkingAvailable = 30 - numOfCars;
+//     console.log(`we have ${parkingAvailable} parking spaces left`);
+//     parkingAvailable = parkingAvailable - 2;
+//     if (parkingAvailable === 0);
+// } while (numOfCars >= 30);
+//
+// console.log("Gimmie $20 and I'll let you park behind the dumpster")
 
-do {
-    var parkingAvailable = 30 - numOfCars;
-    console.log(`we have ${parkingAvailable} parking spaces left`);
-    parkingAvailable = parkingAvailable - 2;
-    if (parkingAvailable === 0);
-} while (numOfCars >= 30);
+// TODO: Loop through a set of numbers (0-30), if the number you're currently at is even, add 2 to it. If it's an
+//  odd number, print "odd"
+// // HINT: remember the remainder operator (modulo)
 
-console.log("Gimmie $20 and I'll let you park behind the dumpster")
+for (var n = 0; n <
 
+
+
+// // TODO: loop through numbers 1 - 40. Print "marco" if it's divisible by 3. Print "polo" if it's divisible by 5.
+//  If it's neither print "I'm not playing"
+//  Print "marco polo" if it's divisible by 3 and 5.
