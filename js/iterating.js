@@ -7,11 +7,16 @@
      * 'names'.
      */
 
+    var names = ['Bruce', 'Lillie', 'Stephen', 'Joseph'];
+    // console.log(names.length)
+
     /**
      * TODO:
      * Create a log statement that will log the number of elements in the names
      * array.
      */
+
+    // console.log(names.length)
 
     /**
      * TODO:
@@ -19,16 +24,31 @@
      * accessing each element's index.
      */
 
+    // console.log("This person's name is: " + names[0]);
+    // console.log("This person's name is: " + names[1]);
+    // console.log("This person's name is: " + names[2]);
+    // console.log("This person's name is: " + names[3]);
+
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
 
+    // for (var i = 0; i < names.length; i++){
+    //     console.log(names[i]);
+    // }
+
+    names.forEach(function (name){
+        console.log(name);
+    })
+
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
+
+
 
     /**
      * TODO:
