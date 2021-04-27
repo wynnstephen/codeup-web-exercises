@@ -50,18 +50,25 @@
 //          -> consider how the methods you are using change state of the array
 
 
-var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+// var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+//
+// function weeks (arr){
+//     var newArr = [];
+//     for (var i = 0; i < arr.length; i++){
+//         console.log(arr.length)
+//         var popped = arr.pop();
+//         console.log(arr.length)
+//         console.log(i)
+//         console.log(popped)
+//         newArr.unshift(popped)
+//         console.log(newArr)
+//
+//     }
+// }
 
-function weeks (arr){
-    var newArr = [];
-    for (var i = 0; i < arr.length; i++){
-        console.log(arr.length)
-        var popped = arr.pop();
-        console.log(arr.length)
-        console.log(i)
-        console.log(popped)
-        newArr.unshift(popped)
-        console.log(newArr)
-
-    }
-}
+// var shapes = ['square', 'rectangle', 'circle', 'triangle'];
+//
+// shapes.forEach(function (shape){
+//     console.log('Here is a lovely shape: ' + shape + '.');
+//
+// });
