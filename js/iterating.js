@@ -64,19 +64,19 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-    function first(array){
-        return array[0];
-    }
-
-    function second(array){
-        return array[1];
-    }
-
-    function last(array){
-        return array[3];
-    }
-    function logLastIndex(array){
-        console.log("the last index is : " array);
-    }
-
-})();
+//     function first(array){
+//         return array[0];
+//     }
+//
+//     function second(array){
+//         return array[1];
+//     }
+//
+//     function last(array){
+//         return array[3];
+//     }
+//     function logLastIndex(array){
+//         console.log("the last index is : " array);
+//     }
+//
+// })();
