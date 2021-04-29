@@ -23,7 +23,29 @@
          * console.log 'helloMessage' to check your work
          */
 
-        var myName =
+        // function sayHello(name){
+        //         var = "Stephen";
+        //
+        // }
+
+            function sum(a, b) {
+                    var result = a + b; // technically the `result` variable is not necessary
+                    return result;      // instead we could just return a + b directly
+            }
+
+            // var x = 3;
+            // var seven = sum(x, 4);
+            //
+            // console.log(seven);
+
+            // a function with no return value
+            function shout(message) {
+                    alert(message.toUpperCase() + "!!!");
+            }
+
+            var returnValue = shout('hello there');
+            console.log(returnValue); // undefined
+            console.log(shout)
 
 
         /**
