@@ -1,5 +1,4 @@
-(
-    function () {
+(function () {
         "use strict"
 
         /**
@@ -10,11 +9,14 @@
          * Example
          * > sayHello("codeup") // returns "Hello, codeup!"
          */
-        function sayHello(name) {
-            return prompt("Hello, Codeup")
+
+        function sayHello(name){
+            return("Hello" + name);
+
         }
 
-        console.log(sayHello());
+        console.log(sayHello("Stephen"));
+
         /**
          * TODO:
          * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -23,15 +25,15 @@
          * console.log 'helloMessage' to check your work
          */
 
-        // function sayHello(name){
-        //         var = "Stephen";
-        //
-        // }
+        let helloMessage = sayHello("Stephen");
+            console.log(helloMessage);
 
-            function sum(a, b) {
-                    var result = a + b; // technically the `result` variable is not necessary
-                    return result;      // instead we could just return a + b directly
-            }
+
+
+            // function sum(a, b) {
+            //         var result = a + b; // technically the `result` variable is not necessary
+            //         return result;      // instead we could just return a + b directly
+            // }
 
             // var x = 3;
             // var seven = sum(x, 4);
@@ -39,13 +41,13 @@
             // console.log(seven);
 
             // a function with no return value
-            function shout(message) {
-                    alert(message.toUpperCase() + "!!!");
-            }
-
-            var returnValue = shout('hello there');
-            console.log(returnValue); // undefined
-            console.log(shout)
+            // function shout(message) {
+            //         alert(message.toUpperCase() + "!!!");
+            // }
+            //
+            // var returnValue = shout('hello there');
+            // console.log(returnValue); // undefined
+            // console.log(shout)
 
 
         /**
@@ -57,7 +59,7 @@
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-        var random = Math.floor((Math.random() * 3) + 1);
+//         var random = Math.floor((Math.random() * 3) + 1);
 
         /**
          * TODO:
@@ -88,11 +90,11 @@
          * > calculateTip(0.25, 25.50) // returns 6.375
          * > calculateTip(0.15, 33.42) // returns 5.013
          */
-function calculateTip(tip, total){
-        return (tip * total)
-                calculateTip(.20, 20)
-        }
-console.log(calculateTip(.20, 20))
+// function calculateTip(tip, total){
+//         return (tip * total)
+//                 calculateTip(.20, 20)
+//         }
+// console.log(calculateTip(.20, 20))
         /**
          * TODO:
          * Use prompt and alert in combination with your calculateTip function to
@@ -109,8 +111,8 @@ console.log(calculateTip(.20, 20))
          *
          * Example:
          * > var originalPrice = 100;
-         * > var dicountPercent = .2; // 20%
-         * > applyDiscount(originalPrice, dicountPercent) // 80
+         * > var discountPercent = .2; // 20%
+         * > applyDiscount(originalPrice, discountPercent) // 80
          *
          * > applyDiscount(45.99, 0.12) // 40.4712
          */
