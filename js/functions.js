@@ -37,7 +37,7 @@
 
             // var x = 3;
             // var seven = sum(x, 4);
-            //
+            //`
             // console.log(seven);
 
             // a function with no return value
@@ -57,16 +57,20 @@
          * console.
          */
 
-// Don't modify the following line, it generates a random number between 1 and 3
-// and stores it in a variable named random
-//         var random = Math.floor((Math.random() * 3) + 1);
+            var myName = "Stephen";
+
+        console.log(sayHello(myName));
+
+
+        // Don't modify the following line, it generates a random number between 1 and 3
+        // and stores it in a variable named random
+        //         var random = Math.floor((Math.random() * 3) + 1);
 
         /**
          * TODO:
          * Create a function called 'isTwo' that takes a number as a parameter.
          * The function should return a boolean value based on whether or not the passed
          * number is the number 2.
-         *
          * Example
          * > isTwo(1) // returns false
          * > isTwo(2) // returns true
@@ -79,6 +83,14 @@
          * number)
          */
 
+            function isTwo(random){
+                return(random === 2);
+        }
+
+        console.log(isTwo(random));
+
+
+
         /**
          * TODO:
          * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -90,6 +102,13 @@
          * > calculateTip(0.25, 25.50) // returns 6.375
          * > calculateTip(0.15, 33.42) // returns 5.013
          */
+
+            function calculateTip(tipValue, billValue){
+                return(tipValue * billValue)
+        }
+
+        console.log(calculateTip(.20, .20));
+
 // function calculateTip(tip, total){
 //         return (tip * total)
 //                 calculateTip(.20, 20)
@@ -101,6 +120,25 @@
          * prompt the user for the bill total and a percentage they would like to tip,
          * then display the dollar amount they should tip
          */
+
+        function getTip(){
+            var tipPercentage = getTipPercentage();
+            var totalBill = getTotalBill();
+            alert('Your total tip will be: ' + (tipPercentage * totalBill));
+
+        }
+
+        function getTipPercentage(){
+            return prompt('How much would you like to tip today?') * .01;
+
+        }
+
+        function getTotalBill(){
+            return prompt('How much was your total bill')
+
+        }
+
+        console.log(getTip())
 
         /**
          * TODO:
