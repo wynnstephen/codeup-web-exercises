@@ -34,7 +34,7 @@ body {
 }
 li {
     background-color: orange;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", serif;
     list-style: none;
     width: 250px;
     color: black;
@@ -44,7 +44,7 @@ li {
 
 table {
     background-color: orange;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", serif;
     list-style: none;
     width: 500px;
     height: 100px;
