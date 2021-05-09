@@ -93,6 +93,9 @@ These lines create two variables for you:
      * function to show it to the user.
      */
 
+    var useColor = prompt("What is your favorite color?");
+    var returnAlert = alert(analyzeColor(userColor));
+
 
 
     /* ########################################################################## */
@@ -144,7 +147,11 @@ These lines create two variables for you:
      * price before the discount was, and what their price after the discount is.
      */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+var getuserBill = prompt('What was your total bill today?');
+alert("today you lucky # is: " + luckyNumber);
+var userNewBill = calculateTotal(luckyNumber, getuserBill);
+alert(userNewBill);
 
     /**
      * TODO:
@@ -162,6 +169,72 @@ These lines create two variables for you:
      * Can you refactor your code to use functions?
      * HINT: The way we prompt for a value could be improved
      */
+
+    function numChecker(){
+        var numToCheck = parseInt(prompt("what is your #?"), 10);
+        while (isNaN(numToCheck)) {
+            alert("That ain't no number!");
+            var (isNaN(numToCheck) === false) {
+                return numToCheck;
+            }
+        } return numToCheck;
+    }
+
+    function oddChecker (num){
+        if (num % 2 === 0){
+            alert("Your # is even.");
+        }else{
+            alert("Your # is odd.");
+        }
+    }
+
+    function add100(num){
+        alert("Your # plus 100 is: " + (num + 100));
+    }
+    function signChecker(num){
+        if (num > 0 ){
+            alert("You # is a positive.");
+        }else if (num < 0){
+            alert("Your # is a negative");
+        }else{
+            alert("Your number is not positive or negative bc it is a zero!.");
+        }
+    }
+
+    function numTest(){
+        let playCheck = confirm("I want to play a number game");
+        if (playCheck){
+            var number = numChecker();
+            oddChecker(num);
+            add100(num);
+            signChecker(num);
+            alert("Thank you come again.");
+        }else{
+            alert("Okaaayyyy");
+            window.close();
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 })()
