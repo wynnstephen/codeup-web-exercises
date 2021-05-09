@@ -16,6 +16,34 @@
 //         result +='\n'
 // }
 // console.log(result)
+//
+//
+// function showMultiplicationTable ()
+
+// function showMultiplicationTable(num){
+//     for (var i = i; i <= 10; i++){
+//         console.log(num + "x" + i + " = " + (num * i));
+//     }
+// }
+//
+// console.log(showMultiplicationTable(7));
+
+for (var i = 0; i < 10; i++){
+    var random = Math.floor(Math.random() * (200 - 20)) + 20;
+
+    if (random % 2 === 0){
+        console.log(random + "is even");
+    }else {
+        console.log(random + "is odd");
+    }
+}
+
+let numPyramid = function (start, end){
+    for (let i = start; i <= end; i++);
+    console.log(i.toString().repeat(i));
+}
 
 
-function showMultiplicationTable ()
+for (var i = 100; i >= 5; i -= 5){
+    console.log(i);
+}
