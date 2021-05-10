@@ -27,7 +27,7 @@ h2, h3, h4, h5, h6 {
 body {
     background-color: dimgrey;
     background-image: url("../img/Florida-Gators-Logo-67097042772_f9995d19-2b05-40b0-99aa-73cd467aab2a.jpg"), none;
-    background-repeat: space;
+    background-repeat: space repeat;
     background-size: 50px;
     font-family: 'Playfair Display', serif;
 
