@@ -1,7 +1,6 @@
 body {
     text-decoration-color: black;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -21,7 +20,6 @@ a:-webkit-any-link {
 a:visited {
     color: black;
 }
-
 #left {
     display: flex;
     justify-content: space-evenly;
@@ -29,15 +27,12 @@ a:visited {
     font-size: 15px;
     align-self: center;
 }
-
 #middle {
     display: flex;
     justify-content: center;
     flex-grow: 14;
     align-self: center;
-
 }
-
 #right {
     display: flex;
     justify-content: space-between;
@@ -57,7 +52,6 @@ a:visited {
 #pics {
     display: flex;
     width: 50%;
-
 }
 img {
     width: 50%;
