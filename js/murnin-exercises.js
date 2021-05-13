@@ -21,8 +21,18 @@
 // If either of the arguments are not a numeric string or number, return a string message indicating which argument is not a number/numeric string
 
 
-function remainder(x){
-    return remainder % x;
-}
+// function remainder(x){
+//     return remainder % x;
+// }
+//
+// console.log(remainder(4))
 
-console.log(remainder(4))
+let n = 5
+let string = "";
+for (let i = 1; i <= n; i++){
+    for (let j = 0; j < i; j++){
+        string += "*";
+    }
+    string += "\n";
+}
+console.log(string);
