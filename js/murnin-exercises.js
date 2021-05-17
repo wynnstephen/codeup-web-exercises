@@ -27,12 +27,19 @@
 //
 // console.log(remainder(4))
 
-let n = 5
-let string = "";
-for (let i = 1; i <= n; i++){
-    for (let j = 0; j < i; j++){
-        string += "*";
-    }
-    string += "\n";
+// let n = 5
+// let string = "";
+// for (let i = 1; i <= n; i++){
+//     for (let j = 0; j < i; j++){
+//         string += "*";
+//     }
+//     string += "\n";
+// }
+// console.log(string);
+//
+// Write a function named secondToLast(arr) that returns the data type of the second to last element of the array parameter.
+//     When you call the function, pass in an array of your choosing
+
+function secondToLast(arr){
+
 }
-console.log(string);
