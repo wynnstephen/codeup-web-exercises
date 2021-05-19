@@ -1,7 +1,6 @@
 body{
-    background-color: tan;
+    background-color: slategrey;
 }
-
 .A{
     border: red solid;
     background-color: blue;
@@ -26,4 +25,7 @@ body{
 }
 .F{
     border: indigo solid;
+}
+.col{
+    margin: 5px;
 }
