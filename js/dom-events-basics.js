@@ -4,23 +4,23 @@
 //  -> click, dblclick, submit, hover, keyup, keydown, mouseover, mouseout, change, and many more!
 //  -> https://developer.mozilla.org/en-US/docs/Web/Events
 
-// getBang();
-//
-// function getBang() {
-//     document.getElementById("Home")
-//         .addEventListener("click", appendBang)
-// }
-// function appendBang() {
-//     document.getElementById("Home")
-//         .appendChild(getImageNode());
-//     alert("*GET OFF MY LAWN!!!")
-// }
-// function getImageNode() {
-//     let imageNode = document.createElement("img")
-//     imageNode.setAttribute("src", "../img/bang.jpg");
-//     imageNode.setAttribute("class", "col-12");
-//     return imageNode;
-// }
+getBang();
+
+function getBang() {
+    document.getElementById("Home")
+        .addEventListener("click", appendBang)
+}
+function appendBang() {
+    document.getElementById("Home")
+        .appendChild(getImageNode());
+    alert("*GET OFF MY LAWN!!!")
+}
+function getImageNode() {
+    let imageNode = document.createElement("img")
+    imageNode.setAttribute("src", "../img/bang.jpg");
+    imageNode.setAttribute("class", "col-12");
+    return imageNode;
+}
 //TODO: Listener - what will *happen* when the event fires off
 //  -> Can be whatever you want/need. For example:
 //      -> On click, change the background color
@@ -41,6 +41,7 @@
 // }
 // function getColorChange() {
 //     document.body.style.backgroundColor = "red";
+//     return changeColor;
 // }
 
 // TODO: Putting it together
