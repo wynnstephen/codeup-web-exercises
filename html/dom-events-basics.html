@@ -9,13 +9,24 @@
               integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
               crossorigin="anonymous">
         <title>DOM Events Basics</title>
-
+        <style>
+            canvas {
+                display: block;
+                position: absolute;
+                border: 5px solid  #009BFF;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+        </style>
     </head>
     <body>
 
 
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand text-success" href="#">Evyntful</a>
+            <a id="Eventful" class="navbar-brand text-success" href="#">Evyntful</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,7 +46,7 @@
                             Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
-                            <a class="dropdown-item" href="#">Make an element</a>
+                            <a id="Make an element" class="dropdown-item" href="#">Make an element</a>
                             <a id="Make another element" class="dropdown-item" href="#">Make another element</a>
                             <a id="ANOTHER ONE" class="dropdown-item" href="#">ANOTHER ONE</a>
                         </div>
