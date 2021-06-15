@@ -1,3 +1,5 @@
+"use strict";
+
 const users = [
     {
         id: 1,
@@ -36,7 +38,6 @@ const users = [
     }
 ];
 
-const users = [...]
 
 // let userWithLanguages = user.filter(function (user){
 //     return user.languages.length >= 3;
@@ -70,7 +71,17 @@ const users = [...]
 // }, "")
 
 
+let nameString = users.reduce((string, curVal) => {
 
+    if (index === users.length - 1) {
+        return acc + curVal.name + ".";
+    }
+
+    return acc + curVal.name + ", ";
+
+}, "");
+
+console.log(nameString)
 
 
 
