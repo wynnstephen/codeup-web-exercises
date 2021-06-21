@@ -42,3 +42,120 @@
         <dd class="invisible">Yes.</dd>
     </body>
 </html>
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+              integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+              crossorigin="anonymous">
+        <title>jquery FAQ</title>
+    </head>
+    <body>
+        <button id="click" type="button">Click</button>
+        <h3> Facts about National Parks</h3>
+        <dl>
+            <dt> Fact 1</dt>
+            <dd> The National Park Service protects over 84 million acres of wild landscapes and historic sites.</dd>
+            <dt> Fact 2</dt>
+            <dd> Yellowstone National Park (in Wyoming, Idaho, and Montana) is the oldest U.S. national park, founded in
+                1872.
+            </dd>
+            <dt> Fact 3</dt>
+            <dd>The second U.S. national park created is no longer a national park. Mackinac National Park in Michigan
+                was established in 1875 and was returned to the state in 1895. It is now one of Michigan's State Parks.
+            </dd>
+            <dt> Fact 4</dt>
+            <dd>Three of the 10 highest waterfalls in the world are located in Yosemite National Park in California.
+            </dd>
+            <dt> Fact 5</dt>
+            <dd>Ribbon Falls in Yosemite is nine times taller than Niagara Falls.</dd>
+            <dt> Fact 6</dt>
+            <dd>One of the hottest temperatures on earth was recorded in 1913 in Death Valley National Park, registering
+                134 degrees.
+            </dd>
+            <dt> Fact 7</dt>
+            <dd>The Grand Canyon, in Grand Canyon National Park in Arizona, is known as one of the Seven Natural Wonders
+                of the World.
+            </dd>
+            <dt> Fact 8</dt>
+            <dd>National parks are home to life on a big scale: Sequoia trees are some of the world's largest living
+                things, and Alaskan brown bears are some of the world's largest carnivores.
+            </dd>
+            <dt> Fact 9</dt>
+            <dd>California's Sequoia National Park is home to the largest living single-stem tree in the world, the
+                wonderfully named General Sherman. The tree is approximately 275 feet tall and weighs approximately
+                1,900 metric tons.
+            </dd>
+            <dt> Fact 10</dt>
+            <dd>When a giant sequoia tree fell and blocked a road in Sequoia National Park in California in 1937, the
+                National Park Service simply created a tunnel through the 275-foot by 21-foot tree.
+            </dd>
+        </dl>
+
+        <h3>Yellowstone</h3>
+        <ul>
+            <li>Yellowstone is the world’s first national park.</li>
+            <li>3,472 square miles (8,991 km2)</li>
+            <li>More than 10,000 hydrothermal features</li>
+
+        </ul>
+        <h3>Yosemite</h3>
+        <ul>
+            <li>Yosemite National Park covers nearly 1,200 square miles.</li>
+            <li>The American Indians who live in Yosemite are called the Ahwahneechee Indians. Their traditional homes
+                look like teepees, but are actually made of incense-cedar bark.
+            </li>
+            <li>California has approximately 7,000 known plant species. Yosemite contains twenty percent of those
+                species.
+            </li>
+        </ul>
+        <h3>Death Valley</h3>
+        <ul>
+            <li>Death Valley National Park covers a total area of 3,367,627 acres</li>
+            <li>The name Death Valley came from a group of pioneers lost in the area in 1849. Although only one of the
+                group died, they all thought they would, and dubbed the area Death Valley as they finally exited.
+            </li>
+            <li>Death Valley is the largest national park in the United States outside of Alaska, taking over the title
+                from Yellowstone National Park upon its creation in 1994.
+            </li>
+        </ul>
+
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+                integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+                crossorigin="anonymous"></script>
+        <script>
+
+            $(document).ready(function(){
+                $('#click').click(function(e){
+                    e.preventDefault();
+                    $('ul li:nth-child(3)').css({'background-color':'yellow',})
+
+                });
+                $('h3').click(function(e){
+                    e.preventDefault();
+                    console.log('success');
+                    // console.log($(this.children()));
+                    $(this).next('ul').children().css({'font-weight':'bold',});
+                })
+                $('li').click(function(e){
+                    e.preventDefault();
+                    console.log('success');
+                    let papa = $(this).parent();
+                    // console.log($(this).parent());
+                    papa.children('li:nth-child(1)').css({'color':'blue',})
+                })
+            })
+
+        </script>
+    </body>
+</html>
